@@ -34,7 +34,7 @@ function Home() {
   return (
     <div>
       <video width="40%" controls poster="../assets/thumbnail.jpg">
-        <source src="../assets/bam.mp4" />
+        <source src="../assets/intro_com.mp4" />
         Your browser does not support the video tag.
       </video>
       <h1>NEWS</h1>
