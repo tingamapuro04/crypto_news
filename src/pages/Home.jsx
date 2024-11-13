@@ -33,6 +33,10 @@ function Home() {
 
   return (
     <div>
+      <video width="40%" controls poster="../assets/thumbnail.jpg">
+        <source src="../assets/bam.mp4" />
+        Your browser does not support the video tag.
+      </video>
       <h1>NEWS</h1>
       <div className="blog-list">
         {blogs.map((blog) => (
@@ -52,7 +56,13 @@ function Home() {
                   </div>
                 ))}
                 <p className="time">{blog.time}</p>
-                <p className={blog.sentiments === "Positive"? 'positive':'negative'}>{blog.sentiments}</p>
+                <p
+                  className={
+                    blog.sentiments === "Positive" ? "positive" : "negative"
+                  }
+                >
+                  {blog.sentiments}
+                </p>
               </div>
             </div>
           </div>
